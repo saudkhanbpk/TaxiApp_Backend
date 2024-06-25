@@ -17,15 +17,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  // newpassword: {
-  //       type: String,
-  //       // validate: {
-  //       //     validator: function(value) {
-  //       //         return value === this.password;
-  //       //     },
-  //       //     message: "Passwords do not match"
-  //       // }
-  //   },
+
   resetPasswordOTP :{
         type:Number,
     },

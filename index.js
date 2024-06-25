@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/authRoutes');
+const TaxiReportRoutes = require('./routes/TaxiReportRoutes');
 const db = require('./config/db');
 
 dotenv.config();
@@ -14,6 +15,7 @@ app.use(express.json());
 console.log("route:", app.path)
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api', TaxiReportRoutes);
 
 // Database Connection
 db();
